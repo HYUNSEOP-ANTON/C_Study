@@ -5,9 +5,7 @@
 ```bash
 gcc hello.c -o hello
 ./hello
-
+```
 ## Repository 
-├── CH01/         # Chapter 1 
-├── CH02/         # Chapter 2 
-├── .gitignore    # Gitignore
-└── README.md     # Project ReadMe
+- .gitignore    # Gitignore
+- README.md     # Project ReadMe
