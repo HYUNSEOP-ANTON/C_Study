@@ -31,7 +31,7 @@ int x = 1; //from here this line is comment.
 /* /* this is wrong commnet, you can't make comment in comment section */ */
 ```
 
-## Why is comment special?
+### Why is comment special?
 Comment is incredibely important, it helps other people can understand the sauce code better and easier.  
 When it's complicated and complex sauce code, comments help developers to understand better and modify easily.  
 

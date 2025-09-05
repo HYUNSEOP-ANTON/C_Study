@@ -38,5 +38,5 @@ Typical symbols: Start/End (oval), Process (rectangle), Decision (diamond), Inpu
 **Pseudocode** looks like code but ignores strict syntax.  
 It focuses on the **logic**, not language-specific details, making algorithms easy to read and translate into actual code later.
 
-## (Bonus) Compilation Pipeline
+## Compilation Pipeline
 Preprocessing → Compilation → Assembly → Linking → Executable

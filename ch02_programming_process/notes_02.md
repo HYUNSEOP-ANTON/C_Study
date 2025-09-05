@@ -7,10 +7,10 @@
 ## Development process
 Requirements analysis → Design → Implementation → Testing → Maintenance
 
-## Design
+### Design
 Design is the part mainly oriented toward developing the algorithm.
 
-## Implementation
+### Implementation
 Implementation is the core.
 By using development tools, we can write source code and compile it.
 
