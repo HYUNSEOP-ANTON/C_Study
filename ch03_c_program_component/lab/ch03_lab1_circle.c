@@ -24,7 +24,6 @@ int main(void)
 
 /* 
 Output
-PS C:\Dev\C_Study\ch03_c_program_component\lab> .\ch03_lab1_circle.exe
 radius ? : 10
 the area of circle : 314.000000
 the circumference of circle : 62.799999

@@ -1,6 +1,5 @@
 // getting 2 numbers from keyboard and do addition, print the result.
-// if you are doing on Windows OS, you must add this line.
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS // if you are using Visual Studio, you must add this line.
 #include <stdio.h> 
 
 int main(void)
