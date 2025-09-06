@@ -21,7 +21,6 @@ int main(void){
     return 0;
 }
 /*
-Output
 $ ./ch03_lab2_exchange.exe
 Current exchange rate ? : 1420
 How much KRW? :1000000

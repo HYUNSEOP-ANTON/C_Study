@@ -16,7 +16,6 @@ int main (void){
 }
 /*
 Output
-hyunseop@PC-HYUNSEOP MINGW64 /c/Dev/C_Study/ch03_c_program_component/exercise (main)
 $ ./ch03_ex4_temperature.exe
 Enter temperautre in Fahrenheit : 32
 32.000000 Fahrenheit is 0.00 in Celsius
