@@ -124,7 +124,55 @@ In here, `money` was 32767, since we +1. It becomes -332768, this unexpected sit
 If overflow happens, complier wouldn't see this as problem. So the programmer should be aware of it.  
 
 ### Integer Constant
+Integer constant is usally considered as `int` type. However, if the value is bigger than coverage, the complier chagne data type to `long`.  
+If it's not working as `long`, it might change to `unsigned long`. Complier always choose the lowest data type.  
+Programmer can designate data type. Here are examples.  
+| Suffix   | Data Type | Example                         |
+|-------------|------|-----------------------------------|
+`u`, `U`| unsigned int | `123u`, `123U`
+`l`, `L`|long|`123l`, `123L`
+`ul`, `UL` | unsigned long | `123ul`, `123UL`|  
 
+Integer constant cab be either octal or hexadecimal.  To change to octal, `0` must be placed front.  
+To change to hexadecimal, `0x` is needed.
+```C
+    int a = 10;      // decimal
+    int b = 012;     // octal (8 in decimal)
+    int c = 0xA;     // hexadecimal (10 in decimal)
+    //all can be printed by '%d' as decimal.
+```
+*In, hexadecimal, `0xA` and `0xa` are same. It isn't case sensitive.*  
+
+### Symbolic constant
+Unlike variable, constant doesn't have name. It's because programmer actually gives the values.   
+*`int x = 10;` (in here the 10 is constant).*  
+However there is way to give constant a name by using **symbolic constant**. Here is small comparison.
+```C
+int krw_1 = 1400 * dollar; // here we put literally number, 1400.
+int krw_2 = EXCHANGE_RATE * dollar // we use name like variable.
+```
+#### Advantage of using symbolic constant.  
+1. Understand code better. `EXCHANGE_RATE` is easier to understnad than `1400`.
+2. Easy to change the value of constant. In order to change the rate, if codes are written with `1400`, we have to check every `1400`. If it was `EXCHANGE_RATE`, then we just need to simply change the value of `EXCHANGE_RATE`.
+
+#### How to declare symbolic constant.
+1. `#define`  
+`#define EXCHANGE_RATE 1400`  
+This make all `EXCHANGE_RATE` value as 1400. `#define` is usually processed by preprocessor.
+
+*Preprocessor runs before the Compiler. The Preprocessor processes the source code, while the Compiler translates the C source code into machine language.*
+
+2. `const`   
+`const int EXCHANGE_RATE = 1400;`  
+Using `const` keyword front of variable name makes it as constant.  
+Declared variable with `const` can change value once initialised. Be aware of sentence ends with `;`.  
+
+#### `const` vs `#define` which one is better?
+Usually using `const` keyword has more advantages than `#define`.  
+This can store the data type and do a grammatical examination.  
+Plus, `const` can use with structure and array types.
+
+### Internal Representation of Integers
 
 
 
