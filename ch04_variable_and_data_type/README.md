@@ -143,6 +143,14 @@ To change to hexadecimal, `0x` is needed.
     int c = 0xA;     // hexadecimal (10 in decimal)
     //all can be printed by '%d' as decimal.
 ```
+| Format Specifier | Description              | Example Output (`num = 255`) |
+|------------------|--------------------------|-------------------------------|
+| `%d`             | Signed decimal integer   | 255                           |
+| `%u`             | Unsigned decimal integer | 255                           |
+| `%x`             | Hexadecimal (lowercase)  | ff                            |
+| `%X`             | Hexadecimal (uppercase)  | FF                            |
+| `%o`             | Octal                    | 377                           |
+
 *In, hexadecimal, `0xA` and `0xa` are same. It isn't case sensitive.*  
 #### Example 👉 [Integer Constant](./int_const.c)
 

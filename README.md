@@ -15,10 +15,12 @@ This repository is for ...
 ## The Structure of Repository
 Each chapter contains notes, example code, labs, and exercises.
 
-1. **Notes**: The theoretical part, explaining the concepts with some basic examples.
+1. **README (Notes)**: The theoretical part, explaining the concepts with some basic examples.
 2. **Example Code**: Simple code snippets that demonstrate the concepts from the notes.
 3. **Lab**: Practice problems that are a bit more advanced than the examples.
 4. **Exercises**: End-of-chapter problems for additional practice.  
+
+*Reading README and you will see Example codes, after reading theory part, checking Lab and Exercises*
 
 ## How to Compile
 Currently this repository is using mingw64 and VScode.  
